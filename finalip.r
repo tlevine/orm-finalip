@@ -22,7 +22,8 @@ barplot(
     main = 'ORM Final Individual Permit Decisions by District',
     xlab = '',
     ylab = 'Count since 2009',
-    border = NA
+    border = NA,
+    col = ifelse(n.decisions$District == 'New Orleans', 'red', grey)
 )
 par(las = 0)
 mtext('Nota bene: This dataset is not complete.', side = 3, padj = 1)
